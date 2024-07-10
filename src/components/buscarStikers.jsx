@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import Stikersdb from '../../public/stikers.json'; // Importa o arquivo JSON local
-
+import Header from "../content/header"
 
 const SearchPageStikers = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -16,6 +16,7 @@ const SearchPageStikers = () => {
 
   return (
     <div>
+      <Header />
       <h1>Buscar Adesivos</h1>
       <SearchBar onSearch={handleSearch} />
       <ul>
