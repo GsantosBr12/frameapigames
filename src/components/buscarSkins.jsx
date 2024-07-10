@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import Skinsdb from '../../public/skins.json'; // Importa o arquivo JSON local
-import ListaSkins from './listaSkins'
+
 
 const SearchPageSkins = () => {
   const [searchResults, setSearchResults] = useState([]);
@@ -16,13 +16,13 @@ const SearchPageSkins = () => {
 
   return (
     <div>
+      <h1>Buscar Skins</h1>
       <SearchBar onSearch={handleSearch} />
       <ul>
         {searchResults.map(result => (
           <li key={result.id}>{result.name}</li>
         ))}
       </ul>
-      <ListaSkins Skins={item} />
     </div>
   );
 };

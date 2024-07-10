@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
-import Stikers from '../../public/stikers.json';
+import Stikersdb from '../../public/stikers.json'; // Importa o arquivo JSON local
 
 
 const SearchPageStikers = () => {
@@ -8,7 +8,7 @@ const SearchPageStikers = () => {
 
   const handleSearch = (term) => {
     // Filtra os dados do arquivo JSON local com base no termo de busca
-    const results = Stikers.filter(item =>
+    const results = Stikersdb.filter(item =>
       item.name.toLowerCase().includes(term.toLowerCase())
     );
     setSearchResults(results);
@@ -16,7 +16,7 @@ const SearchPageStikers = () => {
 
   return (
     <div>
-      <h1>Pagina de busca</h1>
+      <h1>Buscar Adesivos</h1>
       <SearchBar onSearch={handleSearch} />
       <ul>
         {searchResults.map(result => (

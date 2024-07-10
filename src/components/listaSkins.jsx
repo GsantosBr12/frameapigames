@@ -1,17 +1,19 @@
 import React from 'react';
 import CardSkins from './cardSkins';
+import Skinsdb from '../../public/skins.json'
 
 function ListaSkins({ skins }) {
   return (
     <div>
-      {skins.map((skins) => (
+      {Skinsdb.map(skins => (
         <CardSkins
           key={skins.id}
-          Skins={skins}
+          skins={skins.name}
         />
       ))}
     </div>
   );
-}
+};
+
 
 export default ListaSkins;
