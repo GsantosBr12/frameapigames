@@ -14,7 +14,7 @@ const skins = () => {
     } catch (error) {
       console.error("Erro de acesso api: ", error);
     }
-  };
+  }
 
   return (
     <div >
@@ -24,12 +24,11 @@ const skins = () => {
       <div >
         <div >
           <h2>Todas as Skins</h2>
-          <p>Total Skins: {skins.length}</p>
           <ListaSkins skins={Skins}  />
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
 export default skins;

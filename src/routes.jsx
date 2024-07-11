@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
-import Skins from './skins'
+import SearchPageSkins from './components/buscarSkins'
 import SearchPageColections from './components/buscarColections'
 import SearchPageStikers from './components/buscarStikers'
 
@@ -9,7 +9,7 @@ function AppRoutes() {
         <BrowserRouter>
             <Routes>
                 <Route path="/" element={<Home />} ></Route>
-                <Route path="/Skins" element={<Skins />} ></Route>
+                <Route path="/Skins" element={<SearchPageSkins />} ></Route>
                 <Route path="/Stikers" element={<SearchPageStikers />} ></Route>
                 <Route path="/Colections" element={<SearchPageColections />} ></Route>
             </Routes>

@@ -6,7 +6,6 @@ function CardSkins({ skins }) {
     <div style={{ border: '1px solid #ccc', margin: '10px', padding: '10px' }}>
       <img src={skins.image} alt={`Skin ${skins.name}`} width="100" />
       <h3>{skins.name}</h3>
-      <p>Raridade: {skins.rarity.name.toLocaleString()}</p>
     </div>
   );
 }
