@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { fetchSkins } from './services/apiSkins';
 import ListaSkins from "./components/listaSkins"
+import Header from "./content/header"
 
 
 const skins = () => {
@@ -17,17 +18,19 @@ const skins = () => {
   }
 
   return (
+    <>
+    <Header />
     <div >
         
       <h1>LISTA DE Skins</h1>
       <button onClick={carregaSkins}>Carregar Skins</button>
       <div >
         <div >
-          <h2>Todas as Skins</h2>
           <ListaSkins skins={Skins}  />
         </div>
       </div>
     </div>
+    </>
   )
 }
 

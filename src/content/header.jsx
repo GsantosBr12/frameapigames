@@ -7,7 +7,8 @@ function Header() {
                 <Link to="/">Home</Link>
                 <Link to="/Skins">Skins</Link>
                 <Link to="/Stikers">Stikers</Link>
-                <Link to="/Colections">Colections</Link>
+                <Link to="/BuscarSkins">Busca Skins</Link>
+                <Link to="/BuscarStikers">Busca Stikers</Link>
             </nav>
         </header>
     )    

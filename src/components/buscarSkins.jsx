@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import SearchBar from './SearchBar';
-import Skinsdb from '../../public/skins.json'; // Importa o arquivo JSON local
+import Skinsdb from '/src/skins.json'; // Importa o arquivo JSON local
 import Header from "../content/header"
 
 const SearchPageSkins = () => {
