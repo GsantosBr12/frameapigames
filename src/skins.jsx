@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { fetchSkins } from './services/apiSkins';
 import ListaSkins from "./components/listaSkins"
 import Header from "./content/header"
-
+import './lists.css'
 
 const skins = () => {
 
@@ -20,12 +20,12 @@ const skins = () => {
   return (
     <>
     <Header />
-    <div >
+    <div className='vis' >
         
       <h1>LISTA DE Skins</h1>
       <button onClick={carregaSkins}>Carregar Skins</button>
       <div >
-        <div >
+        <div className='lista' >
           <ListaSkins skins={Skins}  />
         </div>
       </div>

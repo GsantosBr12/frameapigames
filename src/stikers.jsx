@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { fetchStikers } from './services/apistikers';
 import ListaStikers from "./components/listaStikers"
 import Header from "./content/header"
-
+import './lists.css'
 
 const stikers = () => {
 
@@ -20,12 +20,12 @@ const stikers = () => {
   return (
     <>
     <Header />
-    <div >
+    <div className='vis' >
         
       <h1>LISTA DE Skins</h1>
       <button onClick={carregaStikers}>Carregar Stikers</button>
       <div >
-        <div >
+        <div className='lista' >
           <ListaStikers stikers={Stikers}  />
         </div>
       </div>

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import Skinsdb from '/src/skins.json'; // Importa o arquivo JSON local
 import Header from "../content/header"
+import '../components/busca.css'
 
 const SearchPageSkins = () => {
   const [searchResults, setSearchResults] = useState([]);

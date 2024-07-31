@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SearchBar from './SearchBar';
 import Stikersdb from '../../public/stikers.json'; // Importa o arquivo JSON local
 import Header from "../content/header"
+import '../components/busca.css'
 
 const SearchPageStikers = () => {
   const [searchResults, setSearchResults] = useState([]);

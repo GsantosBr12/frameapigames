@@ -1,15 +1,18 @@
 import Header from "../content/header"
 import CS2 from "../../public/Counter-Strike_2_logo.svg"
+import './main.modules.css'
 
 function Home() {
     return (
         < >
             <Header />
-           
-            <h1>Lista API do</h1>
-             <img src={CS2} alt="" />
-            
-            
+            <div className="home">
+                <h1>Lista API do</h1>
+                <img src={CS2} alt="" />
+            </div>
+
+
+
         </>
     )
 }
