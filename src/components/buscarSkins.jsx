@@ -22,7 +22,7 @@ const SearchPageSkins = () => {
       <SearchBar onSearch={handleSearch} />
       <ul>
         {searchResults.map(result => (
-          <li key={result.id}>{result.name}</li>
+          <li key={result.id}><img src={result.image} alt={`Skin ${skins.name}`} width="100" />{result.name}</li>
         ))}
       </ul>
     </div>
