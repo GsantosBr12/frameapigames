@@ -22,7 +22,7 @@ const stikers = () => {
     <Header />
     <div className='vis' >
         
-      <h1>LISTA DE Skins</h1>
+      <h1>LISTA DE STIKERS</h1>
       <button onClick={carregaStikers}>Carregar Stikers</button>
       <div >
         <div className='lista' >
